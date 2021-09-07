@@ -38,7 +38,7 @@ namespace Bank1
         {
             double increment = bankAccount.Ballance * bankAccount.Percent / 100;
             bankAccount.Ballance = bankAccount.Ballance + increment;
-            Console.WriteLine($"Начсилены проценты в размере: {increment}", increment);
+            Console.WriteLine($"Начислены проценты в размере: {increment}", increment);
         }
 
         public static void GetCredit(BankAccount bankAccount, double creditSum)
