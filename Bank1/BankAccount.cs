@@ -18,13 +18,8 @@ namespace Bank1
                 _ballance = value;
             }
         }
-
-        //public double Sum
-        //{
-        //    get; private set;
-        //}
-        
-        public int Percent
+ 
+        private int Percent
         {
             get; set;
         }

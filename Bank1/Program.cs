@@ -10,7 +10,10 @@ namespace Bank1
     {
         static void Main(string[] args)
         {
-            
+            BankAccount account = new BankAccount();
+            account.id = "103";
+            account.Ballance = 2000;
+            Console.WriteLine(account.Ballance);
         }
     }
 }
