@@ -10,10 +10,20 @@ namespace Bank1
     {
         static void Main(string[] args)
         {
-            BankAccount account = new BankAccount();
-            account.id = "103";
-            account.Ballance = 2000;
-            Console.WriteLine(account.Ballance);
+            BankAccount bank = new BankAccount
+            {
+                Ballance = 1200,
+                id = "12314dc",
+                Percent = 0.057 
+            };
+            Operations.Transaction(bank, 100);
+            Operations.Withdraw(bank, 100);
+            Operations.Calculate(bank);
+            Operations.ShowBallance(bank);
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+
         }
     }
 }

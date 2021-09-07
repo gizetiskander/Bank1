@@ -13,10 +13,9 @@ namespace Bank1
             Console.WriteLine(bankAccount.Ballance);
         }
 
-        public static void Transaction(BankAccount bankAccount, BankAccount bankAccount1, double sum)       
+        public static void Transaction(BankAccount bankAccount, double sum)       
         {
-            bankAccount.Ballance -= sum;
-            bankAccount1.Ballance += sum;
+            bankAccount.Ballance += sum;
             Console.WriteLine("Транзакция выполнена");
         }
 
@@ -35,9 +34,16 @@ namespace Bank1
             }
         }
 
+        public static void Calculate(BankAccount bankAccount)
+        {
+            double increment = bankAccount.Ballance * bankAccount.Percent / 100;
+            bankAccount.Ballance = bankAccount.Ballance + increment;
+            Console.WriteLine($"Начсилены проценты в размере: {increment}", increment);
+        }
+
         public static void GetCredit(BankAccount bankAccount, double creditSum)
         {
-
+            
         }
 
     }

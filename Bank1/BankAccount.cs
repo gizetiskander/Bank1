@@ -19,7 +19,7 @@ namespace Bank1
             }
         }
  
-        private int Percent
+        public double Percent
         {
             get; set;
         }
